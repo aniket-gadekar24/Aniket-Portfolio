@@ -37,6 +37,12 @@
   line-height: normal;
 }
 
+.resume-btn-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .skills-heading {

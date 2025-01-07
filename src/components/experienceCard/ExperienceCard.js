@@ -52,7 +52,10 @@ class ExperienceCard extends Component {
             ></div>
             <div
               className="experience-card"
-              style={{ background: `${theme.body}` }}
+              style={{
+                background: `${theme.body}`,
+                backgroundColor: `${theme.highlight}`,
+              }}
             >
               <div
                 style={{

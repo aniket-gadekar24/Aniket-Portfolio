@@ -29,6 +29,11 @@
   color: #868e96;
 }
 
+.themeBtn {
+  display: flex;
+  justify-content: center;
+}
+
 /* Animations */
 @keyframes fade_down {
   0% {

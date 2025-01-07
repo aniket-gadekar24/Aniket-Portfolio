@@ -28,6 +28,7 @@ class Contact extends Component {
                 <img
                   src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
                   alt=""
+                  className="profile_img"
                 />
               </div>
               <div className="contact-heading-text-div">
@@ -69,7 +70,7 @@ class Contact extends Component {
                 </p>
                 <div className="blogsite-btn-div">
                   <Button
-                    text="Visit My Blogsite"
+                    text="Blog Coming Soon.."
                     newTab={true}
                     href={blogSection.link}
                     theme={theme}
@@ -107,6 +108,7 @@ class Contact extends Component {
                 >
                   {addressSection["subtitle"]}
                 </p>
+                <p style={{ color: theme.text }}>{ContactData["email"]}</p>
                 <h1
                   className="address-heading-text"
                   style={{ color: theme.text }}
@@ -121,7 +123,7 @@ class Contact extends Component {
                 </p>
                 <div className="address-btn-div">
                   <Button
-                    text="Visit on Google Maps"
+                    text="Mail Me"
                     newTab={true}
                     href={addressSection.location_map_link}
                     theme={theme}

@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import { skills } from "../../portfolio";
+import { greeting, skills } from "../../portfolio";
 import { Fade } from "react-reveal";
 import DataScienceImg from "./DataScienceImg";
 import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
+import Button from "../../components/button/Button";
 
 function GetSkillSvg(props) {
-  if (props.fileName === "DataScienceImg")
+  if (props.fileName === "backend")
     return <DataScienceImg theme={props.theme} />;
   else if (props.fileName === "FullStackImg")
     return <FullStackImg theme={props.theme} />;
@@ -64,6 +65,22 @@ class SkillSection extends Component {
             </div>
           );
         })}
+        {/* <div className="resume-btn-div">
+            <Button
+            text="See My Resume"
+            newTab={true}
+            href={greeting.resumeLink}
+            theme={theme}
+            />
+          </div> */}
+        {/* <div className="resume-btn-div">
+        <Button 
+        text="See My Resume"
+        newTab={true}
+        href={greeting.resumeLink}
+        theme={theme}
+        />
+        </div> */}
       </div>
     );
   }

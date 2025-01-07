@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 // theme.js
 export const blueTheme = {
   body: "#EDF9FE",
@@ -195,4 +197,36 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
-export const chosenTheme = blueTheme;
+export const nightThemeeee = {
+  body: "#0D1117", // Dark grayish-blue for the body background
+  text: "#C9D1D9", // Light grayish text for readability
+  expTxtColor: "#F0F6FC", // Almost white for emphasized text
+  // highlight: "#58A6FF", // Soft blue for highlights
+  highlight: "#1E90FF",
+  // highlight: "#4169E1",
+  // highlight: "#191970",
+  // highlight: "#6F00FF",
+  dark: "#010409", // Almost black for deep dark elements
+  secondaryText: "#8B949E", // Muted gray for secondary text
+  imageHighlight: "#1F6FEB", // Bright blue for image highlights
+  compImgHighlight: "#21262D", // Dark gray for component image backgrounds
+  jacketColor: "#30363D", // Neutral gray for jacket color
+  headerColor: "#1F6FEB77", // Semi-transparent blue for headers
+  splashBg: "#0D1117", // Matching dark background for splash screens
+};
+
+// const [theme,setTheme] = useState(true)
+// const [themeToExport,setThemeToExport] = useState(blueTheme)
+// function toggle (){
+//   if(theme === true){
+//     setThemeToExport("blueTheme")
+//   }
+//   if(theme === false){
+//     setThemeToExport("nightThemeeee")
+//   }
+// }
+
+export const chosenTheme = nightThemeeee;
+
+// blackTheme
+// blueTheme

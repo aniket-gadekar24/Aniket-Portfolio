@@ -1,0 +1,99 @@
+.toggler {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 70px;
+  height: 35px;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.toggler input {
+  display: none;
+}
+
+.toggler .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.toggler .day {
+  /* background: linear-gradient(45deg, #ffeb3b, #fbc02d); */
+  /* background: linear-gradient(45deg, #ff9800, #ff5722); */
+  /* background: linear-gradient(45deg, #FFEB3B, #FF9800); */
+  /* background: linear-gradient(45deg, #81D4FA, #4FC3F7); */
+  /* background: linear-gradient(45deg, #FFC1A1, #FF7043); */
+  background: linear-gradient(45deg, #a7ffeb, #d4e157);
+
+  opacity: 1;
+}
+
+.toggler .night {
+  /* background: linear-gradient(45deg, #0d47a1, #1e88e5); */
+  /* background: linear-gradient(45deg, #673ab7, #3f51b5); */
+  /* background: linear-gradient(45deg, #0D47A1, #311B92); */
+  /* background: linear-gradient(45deg, #004D40, #1A237E); */
+  /* background: linear-gradient(45deg, #2E003E, #001F54); */
+  background: linear-gradient(45deg, #37474f, #000000);
+
+  opacity: 0;
+}
+
+.toggler input:checked ~ .day {
+  opacity: 0;
+}
+
+.toggler input:checked ~ .night {
+  opacity: 1;
+}
+
+.toggler .ball {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.toggler input:checked + .ball {
+  transform: translateX(35px);
+}
+
+.toggler .sun,
+.toggler .moon {
+  position: absolute;
+  font-size: 20px;
+  color: #fff;
+  z-index: 3;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.toggler .sun {
+  left: 10px;
+  opacity: 1;
+}
+
+.toggler .moon {
+  right: 10px;
+  opacity: 0;
+}
+
+.toggler input:checked ~ .sun {
+  opacity: 0;
+}
+
+.toggler input:checked ~ .moon {
+  opacity: 1;
+}
