@@ -26,7 +26,7 @@ const greeting = {
     // "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
     "An enthusiastic innovator committed to delivering holistic solutions that foster scalable, sustainable systems with meaningful social and technical impact.",
   resumeLink:
-    "https://drive.google.com/file/d/1EF0cQ4b2MX6flVKx5Y46Nr8P2_aXTKcc/view?usp=sharing",
+    "https://drive.google.com/file/d/1MHstyK7B8gHjE6W9ZsKdSZyuEidpbw-L/view?usp=sharing",
   // portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
   linkedinProfile: "https://www.linkedin.com/in/Aniket--Gadekar",
   // githubProfile: "https://github.com/ashutosh1919",
